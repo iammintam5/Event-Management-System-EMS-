@@ -1,0 +1,12 @@
+generator client {
+  provider     = "prisma-client"
+  output       = "../src/generated/prisma"
+  moduleFormat = "cjs"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+// Phase 0 establishes connectivity and migration history only.
+// Add User and event-scoped authorization models in Phase 1.
