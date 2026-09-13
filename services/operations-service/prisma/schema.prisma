@@ -1,0 +1,12 @@
+// This service owns only the operations PostgreSQL schema.
+// Business models and their first migrations belong to later phases.
+generator client {
+  provider = "prisma-client"
+  output = "../src/generated/prisma"
+  moduleFormat = "esm"
+}
+
+datasource db {
+  provider = "postgresql"
+  schemas = ["operations"]
+}
